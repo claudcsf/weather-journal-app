@@ -1,111 +1,99 @@
-body{
-    background: #fffff8;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap');
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 1.5em;
 }
 
-#app{
-    display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
-    justify-content: center;
-    grid-gap: 1em;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+:root {
+    --dark: #0C1618;
+    --light: #FAF4D3;
+    --accent: #004643;
+    --accent2: #D1AC00;
 }
 
-.holder{
-
+#app {
+    display: flex;
+    flex-direction: column;
+    min-width: 420px;
+    max-width: 60%;
+    min-height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: var(--accent);
+    color: var(--light);
+    padding: 2rem;
 }
 
-.entry{
-    background: rgba(59, 74, 107, .4);
+h1 {
+    color: var(--accent2);
 }
 
-#entryHolder{
-
+.zip {
+    width: 100%;
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-#date{
-
+label {
+    font-size: 1.2em;
+    font-weight: 500;
+    align-self: center;
 }
 
-#temp{
-
+input {
+    width: 50%;
+    height: 3rem;
+    padding: 10px;
+    font-size: 1em;
+    border: 0;
+    border-radius: 2px;
 }
 
-#content{
-
+textarea {
+    width: 100%;
+    height: 9rem;
+    padding: 10px;
+    margin-top: 1em;
+    font-size: 1em;
+    border: 0;
+    border-radius: 2px;
 }
 
-.headline {
-
-}
-.title{
-
-}
-
-/*  Basic Styling To Override Default For Basic HTML Elements */
-label{
-    display:block;
-    font-size: 27px;
-}
-
-input{
-    display:block;
-    height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
+#generate{
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    background-color: var(--light);
+    color: var(--accent);
+    font-size: 1em;
+    font-weight: 500;
+    border: 0;
+    border-radius: 2px;
 }
 
-button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-    box-shadow: 2px 4px 5px #444;
-}
-h1{
-    font-size: 36px;
+#icon {
+    text-align: center;
 }
 
-textarea{
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+#journal {
+    margin-top: 2em;
 }
-/* Reset style for HTML element on active to have no border*/
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-}
-/* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
 
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
 
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
 
-} 
+
+
